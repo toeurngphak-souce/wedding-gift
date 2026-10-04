@@ -1,0 +1,1194 @@
+/* =========================
+   COUPLE PHOTOS
+========================= */
+
+.couple-photos {
+  max-width: 800px;
+  margin: 45px auto 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 35px;
+  justify-items: center;
+}
+
+.person-photo {
+  width: 100%;
+  text-align: center;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  transition: 0.3s ease;
+}
+
+.person-photo:hover {
+  transform: translateY(-5px);
+}
+
+
+/* =========================
+   COUPLE IMAGE
+========================= */
+
+.person-photo img {
+  width: 270px;
+  height: 350px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+
+  border-radius: 135px 135px 18px 18px;
+
+  border: 7px solid #fffdf9;
+  outline: 1px solid #d8bd83;
+
+  box-shadow:
+    0 12px 30px rgba(70, 50, 30, 0.14);
+}
+
+.person-photo h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 24px;
+  color: #604737;
+  margin-top: 20px;
+  margin-bottom: 4px;
+}
+
+.person-photo p {
+  font-family: "Playfair Display", serif;
+  font-size: 17px;
+  color: #b89457;
+  margin: 0;
+}
+
+.person-photo::after {
+  content: "♡";
+  display: block;
+  margin-top: 10px;
+  font-size: 18px;
+  color: #c9a96e;
+}
+
+
+/* =========================
+   PAYMENT SECTION
+========================= */
+
+.payment-section {
+  padding: 100px 20px;
+  text-align: center;
+  background: #fffdf9;
+}
+
+.payment-section h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 40px;
+  color: #604737;
+  margin-bottom: 15px;
+}
+
+.payment-description {
+  max-width: 650px;
+  margin: 0 auto 40px;
+  color: #806e60;
+  line-height: 2;
+}
+
+
+/* =========================
+   PAYMENT CARDS
+========================= */
+
+.payment-container {
+  max-width: 900px;
+  margin: auto;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+.payment-card {
+  padding: 30px;
+  background: #fff;
+  border: 2px solid #e5d4b5;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s ease;
+
+  box-shadow:
+    0 10px 30px rgba(70, 50, 30, 0.07);
+}
+
+.payment-card:hover {
+  transform: translateY(-5px);
+}
+
+.payment-card.active {
+  border-color: #b89457;
+
+  box-shadow:
+    0 15px 40px rgba(70, 50, 30, 0.12);
+}
+
+
+/* =========================
+   BANK LOGO
+========================= */
+
+.bank-logo {
+  display: inline-block;
+  padding: 8px 20px;
+  margin-bottom: 15px;
+
+  background: #f5ead6;
+  border-radius: 10px;
+
+  color: #8b6938;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.payment-card h3 {
+  font-family: "Playfair Display", serif;
+  color: #604737;
+  margin-bottom: 15px;
+}
+
+.payment-card p {
+  color: #806e60;
+  font-size: 14px;
+  margin: 6px 0;
+}
+
+
+/* =========================
+   QR CODE
+========================= */
+
+.qr-placeholder {
+  width: 190px;
+  height: 190px;
+
+  margin: 25px auto 12px;
+  padding: 10px;
+
+  background: #ffffff;
+  border-radius: 18px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  overflow: hidden;
+
+  border: 1px solid #d8bd83;
+
+  box-shadow:
+    0 10px 25px rgba(70, 50, 30, 0.10);
+
+  transition: 0.3s ease;
+}
+
+.qr-placeholder:hover {
+  transform: translateY(-4px);
+
+  box-shadow:
+    0 15px 30px rgba(70, 50, 30, 0.15);
+}
+
+
+/* =========================
+   QR IMAGE
+========================= */
+
+.qr-image {
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+  display: block;
+
+  border-radius: 10px;
+}
+
+.scan-text {
+  color: #9a783f !important;
+  font-weight: 600;
+  font-size: 14px;
+
+  margin-top: 12px !important;
+}
+
+
+/* =========================
+   SELECT
+========================= */
+
+select {
+  width: 100%;
+
+  padding: 15px 16px;
+  margin-bottom: 22px;
+
+  background: #faf6ef;
+
+  border: 1px solid #dfcfb3;
+  border-radius: 12px;
+
+  font-family: "Kantumruy Pro", sans-serif;
+  font-size: 15px;
+
+  outline: none;
+  cursor: pointer;
+}
+
+select:focus {
+  border-color: #c9a96e;
+}
+
+
+/* =========================
+   FILE UPLOAD
+========================= */
+
+input[type="file"] {
+  padding: 12px;
+  cursor: pointer;
+}
+
+.file-name {
+  margin-top: -10px;
+  margin-bottom: 20px;
+
+  color: #806e60;
+  font-size: 14px;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+  /* COUPLE */
+
+  .couple-photos {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    margin-top: 35px;
+  }
+
+  .person-photo img {
+    width: 240px;
+    height: 315px;
+  }
+
+  .person-photo h3 {
+    font-size: 22px;
+  }
+
+  .person-photo p {
+    font-size: 16px;
+  }
+
+
+  /* PAYMENT */
+
+  .payment-section {
+    padding: 70px 20px;
+  }
+
+  .payment-section h2 {
+    font-size: 30px;
+  }
+
+  .payment-container {
+    grid-template-columns: 1fr;
+  }
+
+  .payment-card {
+    padding: 25px 18px;
+  }
+
+
+  /* QR */
+
+  .qr-placeholder {
+    width: 175px;
+    height: 175px;
+    padding: 8px;
+  }
+
+  .scan-text {
+    font-size: 13px;
+  }
+
+}
+/* =========================
+   WEDDING GIFT SECTION
+========================= */
+
+.gift-section {
+  padding: 110px 20px;
+  background: #f8f3eb;
+  position: relative;
+}
+
+
+/* =========================
+   GIFT CARD
+========================= */
+
+.gift-section .card {
+  max-width: 620px;
+  margin: 0 auto;
+
+  padding: 55px 55px 60px;
+
+  background: rgba(255, 255, 255, 0.96);
+
+  border: 1px solid #e5d4b5;
+
+  border-radius: 28px;
+
+  box-shadow:
+    0 20px 60px rgba(70, 50, 30, 0.10);
+
+  position: relative;
+}
+
+
+/* Decorative top */
+
+.gift-section .card::before {
+  content: "♡";
+
+  position: absolute;
+
+  top: -18px;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  width: 38px;
+  height: 38px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #fffdf9;
+
+  border: 1px solid #d8bd83;
+
+  border-radius: 50%;
+
+  color: #c9a96e;
+
+  font-size: 20px;
+}
+
+
+/* =========================
+   TITLE
+========================= */
+
+.gift-section .card h2 {
+  text-align: center;
+
+  font-family: "Playfair Display", serif;
+
+  font-size: 36px;
+
+  font-weight: 500;
+
+  color: #604737;
+
+  margin-bottom: 12px;
+}
+
+.gift-section .description {
+  text-align: center;
+
+  color: #8a7667;
+
+  font-size: 15px;
+
+  line-height: 2;
+
+  margin-bottom: 35px;
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+.gift-section form {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 0;
+}
+
+.gift-section label {
+  font-family: "Kantumruy Pro", sans-serif;
+
+  font-size: 15px;
+
+  font-weight: 500;
+
+  color: #604737;
+
+  margin-bottom: 8px;
+}
+
+
+/* =========================
+   INPUT
+========================= */
+
+.gift-section input,
+.gift-section select,
+.gift-section textarea {
+  width: 100%;
+
+  box-sizing: border-box;
+
+  padding: 15px 17px;
+
+  margin-bottom: 22px;
+
+  background: #fdfaf5;
+
+  border: 1px solid #dfcfb3;
+
+  border-radius: 13px;
+
+  font-family: "Kantumruy Pro", sans-serif;
+
+  font-size: 15px;
+
+  color: #604737;
+
+  outline: none;
+
+  transition: all 0.25s ease;
+}
+
+
+/* Focus */
+
+.gift-section input:focus,
+.gift-section select:focus,
+.gift-section textarea:focus {
+  border-color: #b89457;
+
+  background: #fff;
+
+  box-shadow:
+    0 0 0 3px rgba(200, 170, 110, 0.12);
+}
+
+
+/* Placeholder */
+
+.gift-section input::placeholder,
+.gift-section textarea::placeholder {
+  color: #b8a99c;
+}
+
+
+/* =========================
+   AMOUNT
+========================= */
+
+.gift-section input[type="number"] {
+  font-family: "Playfair Display", serif;
+
+  font-size: 17px;
+}
+
+
+/* =========================
+   FILE UPLOAD
+========================= */
+
+.gift-section input[type="file"] {
+  padding: 12px;
+
+  background: #faf6ef;
+
+  cursor: pointer;
+}
+
+.gift-section input[type="file"]::file-selector-button {
+  border: none;
+
+  padding: 9px 15px;
+
+  margin-right: 12px;
+
+  background: #ead9b8;
+
+  color: #604737;
+
+  border-radius: 9px;
+
+  font-family: "Kantumruy Pro", sans-serif;
+
+  cursor: pointer;
+}
+
+
+/* =========================
+   TEXTAREA
+========================= */
+
+.gift-section textarea {
+  min-height: 120px;
+
+  resize: vertical;
+
+  line-height: 1.8;
+}
+
+
+/* =========================
+   FILE NAME
+========================= */
+
+.gift-section .file-name {
+  margin-top: -12px;
+
+  margin-bottom: 20px;
+
+  padding: 10px 13px;
+
+  background: #f8f3eb;
+
+  border-radius: 10px;
+
+  color: #806e60;
+
+  font-size: 13px;
+}
+
+
+/* =========================
+   SUBMIT BUTTON
+========================= */
+
+.gift-section button {
+  width: 100%;
+
+  padding: 16px 20px;
+
+  margin-top: 8px;
+
+  border: none;
+
+  border-radius: 14px;
+
+  background: #8b6b3f;
+
+  color: white;
+
+  font-family: "Kantumruy Pro", sans-serif;
+
+  font-size: 16px;
+
+  font-weight: 600;
+
+  letter-spacing: 0.5px;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+
+  box-shadow:
+    0 8px 20px rgba(100, 70, 30, 0.18);
+}
+
+.gift-section button:hover {
+  background: #73542e;
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 12px 25px rgba(100, 70, 30, 0.25);
+}
+
+.gift-section button:active {
+  transform: translateY(0);
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+  .gift-section {
+    padding: 80px 15px;
+  }
+
+  .gift-section .card {
+    padding: 45px 22px 50px;
+
+    border-radius: 22px;
+  }
+
+  .gift-section .card h2 {
+    font-size: 29px;
+  }
+
+  .gift-section .description {
+    font-size: 14px;
+  }
+
+  .gift-section input,
+  .gift-section select,
+  .gift-section textarea {
+    padding: 14px;
+
+    font-size: 14px;
+  }
+
+  .gift-section button {
+    padding: 15px;
+  }
+}
+/* =========================
+   LIGHT WEDDING COLORS
+========================= */
+
+body {
+  background: #fdfbf7;
+  color: #6f6258;
+}
+
+/* Headings */
+h1,
+h2,
+h3 {
+  color: #7a6a5d;
+}
+
+/* Gold */
+.section-small {
+  color: #c5a875;
+}
+
+/* Khmer Couple Name */
+.khmer-couple-name {
+  color: #a58b68;
+}
+
+/* Buttons */
+.gift-section button {
+  background: #bda47a;
+  box-shadow:
+    0 8px 20px rgba(120, 95, 60, 0.12);
+}
+
+.gift-section button:hover {
+  background: #aa9168;
+}
+
+/* Gift Section */
+.gift-section {
+  background: #faf7f1;
+}
+
+/* Gift Card */
+.gift-section .card {
+  background: #fffefa;
+  border: 1px solid #eadfce;
+
+  box-shadow:
+    0 20px 60px rgba(100, 80, 50, 0.07);
+}
+
+/* Input */
+.gift-section input,
+.gift-section select,
+.gift-section textarea {
+  background: #fffdf9;
+  border: 1px solid #e8ddcc;
+  color: #75685d;
+}
+
+/* Input focus */
+.gift-section input:focus,
+.gift-section select:focus,
+.gift-section textarea:focus {
+  border-color: #cdb68d;
+
+  box-shadow:
+    0 0 0 3px rgba(205, 182, 141, 0.10);
+}
+
+/* Payment */
+.payment-section {
+  background: #fffefa;
+}
+
+.payment-card {
+  background: #fff;
+  border: 1px solid #e8ddcc;
+
+  box-shadow:
+    0 10px 30px rgba(100, 80, 50, 0.05);
+}
+
+.payment-card.active {
+  border-color: #cdb68d;
+}
+
+/* QR Border */
+.qr-placeholder {
+  border: 1px solid #dfcfb5;
+}
+
+/* Bank Logo */
+.bank-logo {
+  background: #f5eee3;
+  color: #a58b68;
+}
+
+/* Event */
+.event-card {
+  background: #fffefa;
+  border: 1px solid #eadfce;
+}
+/* =========================
+   LIGHT CREAM + GOLD THEME
+========================= */
+
+body {
+  background: #fffdf9;
+  color: #806f63;
+}
+
+/* HEADINGS */
+h1,
+h2,
+h3 {
+  color: #806653;
+}
+
+.section-small {
+  color: #c4a46f;
+}
+
+/* =========================
+   COUPLE
+========================= */
+
+.person-photo h3 {
+  color: #806653;
+}
+
+.person-photo p {
+  color: #b99b6b;
+}
+
+.person-photo img {
+  border-color: #fffefa;
+  outline-color: #dcc8a5;
+
+  box-shadow:
+    0 12px 30px rgba(100, 75, 45, 0.08);
+}
+
+/* =========================
+   EVENT
+========================= */
+
+.event-section {
+  background: #fbf8f2;
+}
+
+.event-card {
+  background: #fffefa;
+  border: 1px solid #eadfce;
+
+  box-shadow:
+    0 10px 30px rgba(100, 75, 45, 0.05);
+}
+
+/* =========================
+   PAYMENT
+========================= */
+
+.payment-section {
+  background: #fffefa;
+}
+
+.payment-card {
+  background: #ffffff;
+  border: 1px solid #e9ddca;
+
+  box-shadow:
+    0 10px 30px rgba(100, 75, 45, 0.05);
+}
+
+.payment-card.active {
+  border-color: #cfb487;
+
+  box-shadow:
+    0 15px 40px rgba(100, 75, 45, 0.08);
+}
+
+.bank-logo {
+  background: #f7efdf;
+  color: #a48658;
+}
+
+.qr-placeholder {
+  border-color: #dfcbaa;
+}
+
+/* =========================
+   GIFT SECTION
+========================= */
+
+.gift-section {
+  background: #faf6ee;
+}
+
+.gift-section .card {
+  background: #fffefa;
+  border: 1px solid #e9ddca;
+
+  box-shadow:
+    0 20px 60px rgba(100, 75, 45, 0.07);
+}
+
+.gift-section .card::before {
+  background: #fffefa;
+  border-color: #d8bd8d;
+  color: #c4a46f;
+}
+
+.gift-section label {
+  color: #806653;
+}
+
+/* INPUT */
+
+.gift-section input,
+.gift-section select,
+.gift-section textarea {
+  background: #fdfaf5;
+  border-color: #e7dac5;
+  color: #806f63;
+}
+
+.gift-section input:focus,
+.gift-section select:focus,
+.gift-section textarea:focus {
+  border-color: #cdb486;
+
+  box-shadow:
+    0 0 0 3px rgba(205, 180, 134, 0.10);
+}
+
+/* BUTTON */
+
+.gift-section button {
+  background: #b99a68;
+
+  box-shadow:
+    0 8px 20px rgba(100, 75, 45, 0.12);
+}
+
+.gift-section button:hover {
+  background: #a88958;
+}
+
+/* FILE */
+
+.gift-section input[type="file"]::file-selector-button {
+  background: #f3e8d4;
+  color: #806653;
+}
+
+/* =========================
+   GUEST LIST
+========================= */
+
+.guest-section {
+  background: #fffefa;
+}
+
+.guest-card {
+  background: #ffffff;
+  border: 1px solid #eadfce;
+}/* =========================
+   SAGE GREEN WEDDING THEME
+========================= */
+
+body {
+  background: #f8fbf8;
+  color: #68766d;
+}
+
+/* HEADINGS */
+
+h1,
+h2,
+h3 {
+  color: #587064;
+}
+
+.section-small {
+  color: #8eaa9a;
+}
+
+
+/* =========================
+   COUPLE
+========================= */
+
+.person-photo h3 {
+  color: #587064;
+}
+
+.person-photo p {
+  color: #8eaa9a;
+}
+
+.person-photo img {
+  border-color: #fffefa;
+  outline-color: #b9cfc1;
+
+  box-shadow:
+    0 12px 30px rgba(70, 100, 80, 0.08);
+}
+
+
+/* =========================
+   EVENT
+========================= */
+
+.event-section {
+  background: #f7faf7;
+}
+
+.event-card {
+  background: #fffefa;
+  border: 1px solid #dce8df;
+
+  box-shadow:
+    0 10px 30px rgba(70, 100, 80, 0.05);
+}
+
+
+/* =========================
+   PAYMENT
+========================= */
+
+.payment-section {
+  background: #fbfdfb;
+}
+
+.payment-card {
+  background: #ffffff;
+  border: 1px solid #dce8df;
+
+  box-shadow:
+    0 10px 30px rgba(70, 100, 80, 0.05);
+}
+
+.payment-card.active {
+  border-color: #9eb8a8;
+
+  box-shadow:
+    0 15px 40px rgba(70, 100, 80, 0.08);
+}
+
+.bank-logo {
+  background: #edf4ef;
+  color: #6f8e7c;
+}
+
+.qr-placeholder {
+  border-color: #c5d9cb;
+}
+
+
+/* =========================
+   GIFT SECTION
+========================= */
+
+.gift-section {
+  background: #f2f7f3;
+}
+
+.gift-section .card {
+  background: #fffefa;
+  border: 1px solid #dce8df;
+
+  box-shadow:
+    0 20px 60px rgba(70, 100, 80, 0.07);
+}
+
+.gift-section .card::before {
+  background: #fffefa;
+  border-color: #b9cfc1;
+  color: #8eaa9a;
+}
+
+.gift-section label {
+  color: #587064;
+}
+
+
+/* =========================
+   INPUT
+========================= */
+
+.gift-section input,
+.gift-section select,
+.gift-section textarea {
+  background: #fbfdfb;
+  border-color: #d8e5dc;
+  color: #68766d;
+}
+
+.gift-section input:focus,
+.gift-section select:focus,
+.gift-section textarea:focus {
+  border-color: #9eb8a8;
+
+  box-shadow:
+    0 0 0 3px rgba(158, 184, 168, 0.12);
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.gift-section button {
+  background: #7f9f8c;
+
+  box-shadow:
+    0 8px 20px rgba(70, 100, 80, 0.12);
+}
+
+.gift-section button:hover {
+  background: #6d8d7a;
+}
+
+
+/* =========================
+   FILE UPLOAD
+========================= */
+
+.gift-section input[type="file"]::file-selector-button {
+  background: #e5efe8;
+  color: #587064;
+}
+
+
+/* =========================
+   GUEST LIST
+========================= */
+
+.guest-section {
+  background: #fbfdfb;
+}
+
+.guest-card {
+  background: #ffffff;
+  border: 1px solid #dce8df;
+}
+/* =========================
+   QUICK NAVIGATION
+========================= */
+
+.quick-nav {
+  position: fixed;
+
+  right: 20px;
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 10px;
+
+  padding: 10px;
+
+  background: rgba(255, 255, 255, 0.92);
+
+  border: 1px solid #dce8df;
+
+  border-radius: 20px;
+
+  box-shadow:
+    0 10px 30px rgba(70, 100, 80, 0.12);
+
+  z-index: 999;
+}
+
+.quick-nav a {
+  width: 42px;
+  height: 42px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-decoration: none;
+
+  background: #f1f7f3;
+
+  border-radius: 50%;
+
+  font-size: 19px;
+
+  transition: 0.25s ease;
+}
+
+.quick-nav a:hover {
+  background: #7f9f8c;
+
+  transform: scale(1.1);
+}
+
+/* Smooth scrolling */
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+  .quick-nav {
+    right: 10px;
+    padding: 7px;
+    gap: 7px;
+    border-radius: 16px;
+  }
+
+  .quick-nav a {
+    width: 36px;
+    height: 36px;
+    font-size: 16px;
+  }
+
+}
